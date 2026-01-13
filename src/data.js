@@ -268,5 +268,29 @@ export const products = [
     name: "Golden Beach American Blend",
     category: "Cigarrillos",
     image: "/images/cigarrillos/golden_beach_american_blend.jpg"
+  },
+  {
+    id: 52,
+    name: "Ron Cartavio Blanco (Chata)",
+    category: "Licores",
+    image: "/images/licores/ron_cartavio_blanco_chata.jpg"
+  },
+  {
+    id: 53,
+    name: "Ron Cartavio Black (Chata)",
+    category: "Licores",
+    image: "/images/licores/ron_cartavio_black_chata.jpg"
+  },
+  {
+    id: 54,
+    name: "Ron Cartavio Superior (Chata)",
+    category: "Licores",
+    image: "/images/licores/ron_cartavio_superior_chata.jpg"
+  },
+  {
+    id: 55,
+    name: "Lucky Strike Wild",
+    category: "Cigarrillos",
+    image: "/images/cigarrillos/lucky_strike_wild.jpg"
   }
 ];
