@@ -64,56 +64,69 @@ function renderFloaters() {
   document.body.appendChild(lightbox);
 }
 
-// --- FUNCIÓN MODIFICADA PARA AGRUPAR POR SUBTIPO ---
 function renderProducts() {
   const grid = document.getElementById('grid');
   
-  // 1. Filtrar los productos según la categoría seleccionada en el menú
+  // 1. Filtrar los productos
   const filtered = currentCategory === 'Todos'
     ? products
     : products.filter(p => p.category === currentCategory);
 
-  // 2. Agrupar los productos
-  const groupedProducts = {};
+  // 2. Agrupar en DOS niveles: Primero por Categoría, luego por Subcategoría
+  const groupedByCategory = {};
   
   filtered.forEach(product => {
-    // Si estamos en "Todos", agrupamos por Categoría principal.
-    // Si estamos dentro de una categoría específica, agrupamos por Subcategoría.
-    const groupName = currentCategory === 'Todos' 
-      ? product.category 
-      : (product.subcategory || 'Otros'); // Usa 'Otros' si olvidaste ponerle subcategory a alguno
+    const cat = product.category;
+    const subcat = product.subcategory || 'Otros';
 
-    if (!groupedProducts[groupName]) {
-      groupedProducts[groupName] = [];
+    if (!groupedByCategory[cat]) {
+      groupedByCategory[cat] = {};
     }
-    groupedProducts[groupName].push(product);
+    if (!groupedByCategory[cat][subcat]) {
+      groupedByCategory[cat][subcat] = [];
+    }
+    groupedByCategory[cat][subcat].push(product);
   });
 
-  // 3. Generar el HTML con títulos de grupo
+  // 3. Generar el HTML
   let html = '';
 
-  for (const [groupName, items] of Object.entries(groupedProducts)) {
-    // Título de la sección (Ej: RON, VINO, etc.)
-    html += `
-      <div class="subcategory-header" style="width: 100%; grid-column: 1 / -1; margin-top: 2rem; margin-bottom: 1rem; border-bottom: 2px solid #eaeaea;">
-        <h2 style="font-size: 1.5rem; color: #333; text-transform: uppercase; margin: 0; padding-bottom: 0.5rem;">
-          ${groupName}
-        </h2>
-      </div>
-    `;
+  for (const [categoryName, subcategories] of Object.entries(groupedByCategory)) {
+    
+    // Título Principal (Ej: LICORES). Solo lo mostramos en la pestaña "Todos" para no ser redundantes al entrar a una pestaña específica.
+    if (currentCategory === 'Todos') {
+      html += `
+        <div class="category-header" style="width: 100%; grid-column: 1 / -1; margin-top: 3rem; margin-bottom: 0.5rem; border-bottom: 3px solid #333;">
+          <h1 style="font-size: 2rem; color: #111; text-transform: uppercase; margin: 0; padding-bottom: 0.5rem;">
+            ${categoryName}
+          </h1>
+        </div>
+      `;
+    }
 
-    // Productos de esta sección
-    html += items.map(product => `
-      <div class="product-card" data-id="${product.id}">
-        <div class="image-container">
-          <img src="${product.image}" alt="${product.name}" class="product-image" loading="lazy">
+    for (const [subcategoryName, items] of Object.entries(subcategories)) {
+      // Subtítulo (Ej: RON, VINO)
+      html += `
+        <div class="subcategory-header" style="width: 100%; grid-column: 1 / -1; margin-top: 1.5rem; margin-bottom: 1rem; border-bottom: 1px solid #ccc;">
+          <h2 style="font-size: 1.3rem; color: #555; text-transform: uppercase; margin: 0; padding-bottom: 0.5rem;">
+            ${subcategoryName}
+          </h2>
         </div>
-        <div class="product-info">
-          <h3 class="product-name">${product.name}</h3>
-          <p class="product-category">${product.subcategory || product.category}</p>
+      `;
+
+      // Productos de ese subtipo
+      html += items.map(product => `
+        <div class="product-card" data-id="${product.id}">
+          <div class="image-container">
+            <img src="${product.image}" alt="${product.name}" class="product-image" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">${product.name}</h3>
+            <p class="product-category">${product.subcategory || product.category}</p>
+          </div>
         </div>
-      </div>
-    `).join('');
+      `).join('');
+    }
   }
 
   grid.innerHTML = html;
