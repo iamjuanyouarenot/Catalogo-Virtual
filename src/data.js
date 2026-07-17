@@ -264,6 +264,12 @@ export const products = [
     image: "/images/licores/ron_cartavio_blanco_chata.jpg"
   },
   {
+    id: 68,
+    name: "Ron Cartavio",
+    category: "Licores",
+    image: "/images/licores/ron cartavio.jpeg"
+  },
+  {
     id: 55,
     name: "Lucky Strike Wild",
     category: "Cigarrillos",
@@ -334,12 +340,6 @@ export const products = [
     name: "Ron Bahamas",
     category: "Licores",
     image: "/images/licores/ron bahamas.jpeg"
-  },
-  {
-    id: 68,
-    name: "Ron Cartavio",
-    category: "Licores",
-    image: "/images/licores/ron cartavio.jpeg"
   },
   {
     id: 69,
