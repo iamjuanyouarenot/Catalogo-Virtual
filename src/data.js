@@ -292,5 +292,102 @@ export const products = [
     name: "Lucky Strike Wild",
     category: "Cigarrillos",
     image: "/images/cigarrillos/lucky_strike_wild.jpg"
+  },
+  // --- NUEVOS PRODUCTOS AGREGADOS ---
+  {
+    id: 56,
+    name: "Anisado",
+    category: "Licores",
+    image: "/images/licores/anisado.jpeg"
+  },
+  {
+    id: 57,
+    name: "Vino Borgoña",
+    category: "Licores",
+    image: "/images/licores/Borgonas.jpeg"
+  },
+  {
+    id: 58,
+    name: "Ron Chata",
+    category: "Licores",
+    image: "/images/licores/chata_ron.jpeg"
+  },
+  {
+    id: 59,
+    name: "Cognac",
+    category: "Licores",
+    image: "/images/licores/cognac.jpeg"
+  },
+  {
+    id: 60,
+    name: "Vino El Garrafón Rosé",
+    category: "Licores",
+    image: "/images/licores/ElGarrafonRose.jpeg"
+  },
+  {
+    id: 61,
+    name: "Pisco Vargas",
+    category: "Licores",
+    image: "/images/licores/pisco_vargas.jpeg"
+  },
+  {
+    id: 62,
+    name: "Champagne Principe Real",
+    category: "Licores",
+    image: "/images/licores/principe_real_champagne.jpeg"
+  },
+  {
+    id: 63,
+    name: "Pisco Quebranta Los 3 Reyes",
+    category: "Licores",
+    image: "/images/licores/quebranta_los_3_reyes.jpeg"
+  },
+  {
+    id: 64,
+    name: "Ron Bahamas Black",
+    category: "Licores",
+    image: "/images/licores/ron_bahamas_black.jpeg"
+  },
+  {
+    id: 65,
+    name: "Ron Bahamas Chata",
+    category: "Licores",
+    image: "/images/licores/ron_bahamas_chata.jpeg"
+  },
+  {
+    id: 66,
+    name: "Ron Bahamas Superior",
+    category: "Licores",
+    image: "/images/licores/ron_bahamas_superior.jpeg"
+  },
+  {
+    id: 67,
+    name: "Ron Bahamas",
+    category: "Licores",
+    image: "/images/licores/ron_bahamas.jpeg"
+  },
+  {
+    id: 68,
+    name: "Ron Cartavio",
+    category: "Licores",
+    image: "/images/licores/ron_cartavio.jpeg"
+  },
+  {
+    id: 69,
+    name: "Vodka Ruskaya",
+    category: "Licores",
+    image: "/images/licores/ruskaya.jpeg"
+  },
+  {
+    id: 70,
+    name: "Vino Santiago Queirolo",
+    category: "Licores",
+    image: "/images/licores/vino_santiago_queirolo.jpeg"
+  },
+  {
+    id: 71,
+    name: "Vino Tabernero",
+    category: "Licores",
+    image: "/images/licores/vino_tabernero.jpeg"
   }
 ];
