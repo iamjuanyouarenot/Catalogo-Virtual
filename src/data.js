@@ -358,5 +358,23 @@ export const products = [
     name: "Vino Tabernero",
     category: "Licores",
     image: "/images/licores/Vino tabernero.jpeg"
+  },
+  {
+    id: 72,
+    name: "Golden Beach American Blend",
+    category: "Cigarrillos",
+    image: "/images/cigarrillos/golden_beach_american_blend.jpg"
+  },
+  {
+    id: 73,
+    name: "Golden Beach Menthol",
+    category: "Cigarrillos",
+    image: "/images/cigarrillos/golden_beach_menthol.jpg"
+  },
+  {
+    id: 74,
+    name: "Lucky Strike Wild",
+    category: "Cigarrillos",
+    image: "/images/cigarrillos/lucky_strike_wild.jpg"
   }
 ];
