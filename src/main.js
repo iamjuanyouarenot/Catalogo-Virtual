@@ -43,7 +43,7 @@ function renderMain() {
 function renderFloaters() {
   // WhatsApp Button
   const waBtn = document.createElement('a');
-  waBtn.href = "https://wa.me/1234567890"; // Replace with real number
+  waBtn.href = "https://wa.me/964004214"; // Replace with real number
   waBtn.className = "whatsapp-btn";
   waBtn.target = "_blank";
   waBtn.innerHTML = '<i class="fab fa-whatsapp"></i>'; // FontAwesome or SVG
