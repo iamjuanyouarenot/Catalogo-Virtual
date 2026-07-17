@@ -293,7 +293,7 @@ export const products = [
     category: "Cigarrillos",
     image: "/images/cigarrillos/lucky_strike_wild.jpg"
   },
-  // --- NUEVOS PRODUCTOS AGREGADOS ---
+  // --- NUEVOS PRODUCTOS CORREGIDOS CON NOMBRES EXACTOS DE GITHUB ---
   {
     id: 56,
     name: "Anisado",
@@ -304,19 +304,19 @@ export const products = [
     id: 57,
     name: "Vino Borgoña",
     category: "Licores",
-    image: "/images/licores/Borgonas.jpeg"
+    image: "/images/licores/Borgoñas.jpeg"
   },
   {
     id: 58,
     name: "Ron Chata",
     category: "Licores",
-    image: "/images/licores/chata_ron.jpeg"
+    image: "/images/licores/chata ron.jpeg"
   },
   {
     id: 59,
     name: "Cognac",
     category: "Licores",
-    image: "/images/licores/cognac.jpeg"
+    image: "/images/licores/cogñac.jpeg"
   },
   {
     id: 60,
@@ -328,49 +328,49 @@ export const products = [
     id: 61,
     name: "Pisco Vargas",
     category: "Licores",
-    image: "/images/licores/pisco_vargas.jpeg"
+    image: "/images/licores/pisco vargas.jpeg"
   },
   {
     id: 62,
     name: "Champagne Principe Real",
     category: "Licores",
-    image: "/images/licores/principe_real_champagne.jpeg"
+    image: "/images/licores/principe real champagne.jpeg"
   },
   {
     id: 63,
     name: "Pisco Quebranta Los 3 Reyes",
     category: "Licores",
-    image: "/images/licores/quebranta_los_3_reyes.jpeg"
+    image: "/images/licores/quebranta los 3 reyes.jpeg"
   },
   {
     id: 64,
     name: "Ron Bahamas Black",
     category: "Licores",
-    image: "/images/licores/ron_bahamas_black.jpeg"
+    image: "/images/licores/ron bahamas black.jpeg"
   },
   {
     id: 65,
     name: "Ron Bahamas Chata",
     category: "Licores",
-    image: "/images/licores/ron_bahamas_chata.jpeg"
+    image: "/images/licores/ron bahamas chata.jpeg"
   },
   {
     id: 66,
     name: "Ron Bahamas Superior",
     category: "Licores",
-    image: "/images/licores/ron_bahamas_superior.jpeg"
+    image: "/images/licores/ron bahamas superior.jpeg"
   },
   {
     id: 67,
     name: "Ron Bahamas",
     category: "Licores",
-    image: "/images/licores/ron_bahamas.jpeg"
+    image: "/images/licores/ron bahamas.jpeg"
   },
   {
     id: 68,
     name: "Ron Cartavio",
     category: "Licores",
-    image: "/images/licores/ron_cartavio.jpeg"
+    image: "/images/licores/ron cartavio.jpeg"
   },
   {
     id: 69,
@@ -382,12 +382,12 @@ export const products = [
     id: 70,
     name: "Vino Santiago Queirolo",
     category: "Licores",
-    image: "/images/licores/vino_santiago_queirolo.jpeg"
+    image: "/images/licores/vino santiago queirolo.jpeg"
   },
   {
     id: 71,
     name: "Vino Tabernero",
     category: "Licores",
-    image: "/images/licores/vino_tabernero.jpeg"
+    image: "/images/licores/Vino tabernero.jpeg"
   }
 ];
