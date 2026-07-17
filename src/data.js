@@ -246,18 +246,6 @@ export const products = [
     image: "/images/licores/tabernero_gran_rose.jpg"
   },
   {
-    id: 47,
-    name: "Ron Cartavio Blanco",
-    category: "Licores",
-    image: "/images/licores/ron_cartavio_blanco.jpg"
-  },
-  {
-    id: 48,
-    name: "Ron Cartavio Black",
-    category: "Licores",
-    image: "/images/licores/ron_cartavio_black.jpg"
-  },
-  {
     id: 50,
     name: "Golden Beach Menthol",
     category: "Cigarrillos",
@@ -271,21 +259,9 @@ export const products = [
   },
   {
     id: 52,
-    name: "Ron Cartavio Blanco (Chata)",
+    name: "Ron Cartavio Chata",
     category: "Licores",
     image: "/images/licores/ron_cartavio_blanco_chata.jpg"
-  },
-  {
-    id: 53,
-    name: "Ron Cartavio Black (Chata)",
-    category: "Licores",
-    image: "/images/licores/ron_cartavio_black_chata.jpg"
-  },
-  {
-    id: 54,
-    name: "Ron Cartavio Superior (Chata)",
-    category: "Licores",
-    image: "/images/licores/ron_cartavio_superior_chata.jpg"
   },
   {
     id: 55,
@@ -293,7 +269,6 @@ export const products = [
     category: "Cigarrillos",
     image: "/images/cigarrillos/lucky_strike_wild.jpg"
   },
-  // --- NUEVOS PRODUCTOS CORREGIDOS CON NOMBRES EXACTOS DE GITHUB ---
   {
     id: 56,
     name: "Anisado",
@@ -305,12 +280,6 @@ export const products = [
     name: "Vino Borgoña",
     category: "Licores",
     image: "/images/licores/Borgoñas.jpeg"
-  },
-  {
-    id: 58,
-    name: "Ron Chata",
-    category: "Licores",
-    image: "/images/licores/chata ron.jpeg"
   },
   {
     id: 59,
